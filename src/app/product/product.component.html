@@ -1,0 +1,13 @@
+<p>product works!</p>
+<!-- property bind -->
+<img [src]="images"/>
+<p>{{count}}</p>
+<p>
+    <!-- event binding -->
+    <button [disabled]="isDisabled" (click)="counter()"> count</button>
+    <button (click)="reset()">Reset</button>
+</p>
+<p>
+    <input [(ngModel)] ="name">
+</p>
+{{name}}
